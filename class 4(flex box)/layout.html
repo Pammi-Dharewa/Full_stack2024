@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial,sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+      }
+      header{
+        background-color: #1e90ff;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        align-items: center;
+      }
+      nav ul{
+        display: flex;
+        list-style: none;
+        gap: 16px;
+      }
+
+      nav a{
+        color: white;
+        text-decoration: none;
+        /* padding: 16px; */
+        
+      }
+      section.hero{
+        background-color: #87cefa;
+        text-align: center;
+        padding: 32px;
+      }
+      .courses{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 32px;
+        gap: 16px;
+      }
+      .course-card{
+        border: 1px solid black;
+        border-radius: 3%;
+        background-color: #e0ffff;
+        padding: 32px;
+        flex: 1 1 30%;
+
+        
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Scaler</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to Scaler</h2>
+            <p>Discover the best courses and tutorials online.</p>
+        </section>
+        <section class="courses">
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <p>Learn the latest web technologies.</p>
+            </div>
+            <div class="course-card">
+                <h3>Data Science</h3>
+                <p>Master data analysis and visualization.</p>
+            </div>
+            <div class="course-card">
+                <h3>Machine Learning</h3>
+                <p>Explore the world of AI and machine learning.</p>
+            </div>
+            <div class="course-card">
+                <h3>Devops</h3>
+                <p>Learn Devops and how to Ship Production Ready Applications</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Scaler. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
