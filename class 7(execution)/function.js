@@ -28,5 +28,15 @@
 // var res2 = add(6,8)
 // console.log(res2)
 
-console.log(a)
-let a = 5
+
+var x = 1
+var y = 6
+function parent(x,y){
+  var a = 10
+  function child1(){
+    console.log('this is ' + a)
+  }
+  console.log(x+y)
+  child1()
+}
+parent(x,y)
