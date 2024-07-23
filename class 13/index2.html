@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>Fix</button>
+  <p>2 + 2 = 22 </p>
+
+  <script>
+    const mybut = document.querySelector('button')
+    console.log(mybut)
+    mybut.addEventListener('click', 
+      function(){
+      const mytext = document.querySelector('p')
+      console.log(mytext)
+      mytext.innerText = "2 + 2 = 4"
+    })
+   
+  </script>
+</body>
+</html>

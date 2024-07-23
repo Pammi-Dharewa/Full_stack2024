@@ -1,0 +1,25 @@
+[
+  {
+    "name" : "pammi", 
+    "veg" : ["potato", "peas" ,"garlic"],
+    "dairy" : ["Milk", "egg"],
+    "ispayment" : true,
+    "amount" : 123
+  },
+
+  {
+    "name" : "sweta", 
+    "veg" : ["potato", "peas" ,"garlic"],
+    "dairy" : ["Milk", "egg"],
+    "ispayment" : true,
+    "amount" : 123
+  },
+
+  {
+    "name" : "aniket", 
+    "veg" : ["potato", "peas" ,"garlic"],
+    "dairy" : ["Milk", "egg"],
+    "ispayment" : true,
+    "amount" : 123
+  }
+]
