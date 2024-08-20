@@ -6,31 +6,33 @@
     <title>Debouncing</title>
   </head>
   <body>
+    <p>Write something...</p>
     <input type="text" id="inputField" />
 
     <script>
       let inputField = document.getElementById("inputField");
 
-      function debounce(fn, delay) {
+      function debounce(fn, delay){
         let timeout;
-        return function () {
-          const later = function () {
-            clearTimeout(timeout);
-            fn(); // processInput
-          };
-          clearTimeout(timeout);
-          timeout = setTimeout(later, delay);
-        };
+        return function(){
+          const later = function(){
+            // clearTimeout(timeout);
+            fn()
+          }
+          clearTimeout(timeout)
+          timeout = setTimeout(later, delay)
+        }
       }
 
-      // Function to process the input
+      // // Function to process the input
       function processInput() {
         console.log("Processing Input...");
       }
 
-      const debouncedInput = debounce(processInput, 250);
+      const debouncedInput = debounce(processInput, 1000);
 
-      inputField.addEventListener("keydown", debouncedInput);
+      inputField.addEventListener("keydown", debouncedInput)
+
     </script>
   </body>
 </html>

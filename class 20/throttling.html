@@ -4,8 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    body, html {
+      height: 3000px;
+      /* position: fixed; */
+    }
+    .status{
+      position: fixed;
+    }
+
+  </style>
 </head>
 <body>
-  
+  <div class="status">
+    Scroll Position: <span id="scrollPosition">0</span>
+  </div>
+
+  <script>
+    let lastScrollTime = 0;
+
+    function update(){
+      let now = new Date().getTime();
+      if(now - lastScrollTime > 1000){
+        document.getElementById('scrollPosition').textContent = window.scrollY
+        console.log("Scrolled")
+        lastScrollTime = now;
+      }
+    }
+    window.addEventListener('scroll', update)
+
+    //   document.getElementById('scrollPosition').textContent = window.scrollY
+    //   console.log('scrolled')
+    // })
+  </script>
 </body>
 </html>
